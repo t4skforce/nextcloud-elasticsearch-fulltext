@@ -1,2 +1,2 @@
 # nextcloud-elasticsearch-fulltext
-elasticsearch + ingest-attachment to be used with nextcloud.
+elasticsearch + ingest-attachment + tesseract to be used with nextcloud
