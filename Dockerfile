@@ -1,6 +1,6 @@
 FROM elasticsearch:7.14.1
 
-ARG BUILD_DATE="2021-10-05T13:47:01Z"
+ARG BUILD_DATE="2021-10-05T13:49:58Z"
 
 RUN set -xe && \
   bin/elasticsearch-plugin install  --batch ingest-attachment && \
