@@ -1,6 +1,6 @@
 FROM elasticsearch:
 
-ARG BUILD_DATE=""
+ARG BUILD_DATE="2021-10-05T14:13:12Z"
 ARG VERSION=""
 
 RUN set -xe && \
