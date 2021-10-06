@@ -14,8 +14,10 @@ RUN set -xe && \
        yum update -y && \
        yum install tesseract tesseract-langpack-* -y && \
        yum clean all && \
+       rm -rf /tmp/* \
+          /var/log/*.log
        ;; \
-    *) 
+    *) \
        dnf update -y && \
        dnf install dnf-plugins-core -y && \
        dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/$osVer/ && \
@@ -23,8 +25,8 @@ RUN set -xe && \
        dnf update -y && \
        dnf install tesseract tesseract-langpack-* -y && \
        dnf clean all && \
+       rm -rf /tmp/* \
+          /var/cache/dnf/* \
+          /var/log/*.log
        ;; \
   esac; \
-  rm -rf /tmp/* \
-     /var/cache/dnf/* \
-     /var/log/*.log
