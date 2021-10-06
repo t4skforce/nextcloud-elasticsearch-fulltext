@@ -15,7 +15,7 @@ RUN set -xe && \
        yum install tesseract tesseract-langpack-* -y && \
        yum clean all && \
        rm -rf /tmp/* \
-          /var/log/*.log
+          /var/log/*.log \
        ;; \
     *) \
        dnf update -y && \
@@ -27,6 +27,6 @@ RUN set -xe && \
        dnf clean all && \
        rm -rf /tmp/* \
           /var/cache/dnf/* \
-          /var/log/*.log
+          /var/log/*.log \
        ;; \
   esac; \
