@@ -44,6 +44,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          platforms: linux/amd64, linux/arm64/v8
           tags: |
             t4skforce/nextcloud-elasticsearch-fulltext:latest
             t4skforce/nextcloud-elasticsearch-fulltext:${{ env.RELEASE_VERSION }}
