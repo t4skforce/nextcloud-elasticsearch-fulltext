@@ -1,7 +1,7 @@
 ARG BUILD_DATE="2021-10-15T22:23:46Z"
-ARG VERSION="7.14.1"
+ARG VERSION="7.14.2"
 
-FROM elasticsearch:7.14.1
+FROM elasticsearch:7.14.2
 
 RUN set -xe && \
   bin/elasticsearch-plugin install  --batch ingest-attachment && \
