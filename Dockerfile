@@ -1,7 +1,7 @@
 ARG BUILD_DATE="2022-06-16T06:23:21Z"
-ARG VERSION="8.2.2"
+ARG VERSION="8.2.3"
 
-FROM elasticsearch:8.2.2
+FROM elasticsearch:8.2.3
 
 RUN set -xe && \
   bin/elasticsearch-plugin install  --batch ingest-attachment && \
